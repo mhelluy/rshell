@@ -1,0 +1,19 @@
+invalid_character: |
+  Pour des raisons de sécurité, les caractères ; | & && > >> < << sont interdits dans le terminal
+  Pour exécuter une commande dans un répertoire spécifique, utilisez 'execute in <répertoire> <commande>'
+  Pour rechercher des termes, utilisez une autre syntaxe de grep.
+forbidden: Vous n'avez pas la permission de faire ceci
+dir_forbidden: Vous n'avez pas accès à ce répertoire.
+file_to_edit: fichier à éditer
+error: Erreur
+unknown_path: chemin introuvable
+expire_access: Vos accès administrateur expireront le %d/%m/%Y à %H:%M.
+expired_access: Vos accès administrateur ont expiré le %d/%m/%Y à %H:%M.
+access_denied: Accès refusé
+usage: Usage
+available_commands: Commandes disponibles
+dir: répertoire
+error_edit_exec: Vous ne pouvez pas éditer les fichiers pour lesquels vous détenez une autorisation d'exécution.
+no_description: Aucune description.
+file: fichier
+command: commande

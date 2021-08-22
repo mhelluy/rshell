@@ -1,0 +1,6 @@
+paths:
+  # $$ is the directory where rshell.py is
+  userpath: $$/users
+  cmdhistory: $$/cmdhistory.yaml
+lang: "en-US"
+timeout_delay: 1 hour

@@ -1,0 +1,28 @@
+commands:
+  - date
+  - ls
+  - mcstart
+  - mcconsole
+  - mcsend
+  - exit
+  - scp
+  - rsync
+  - mclogs
+  - expire
+  - cd
+  - execute
+  - nano
+  - edit
+  - cp
+  - mkdir
+  - rm
+  - rmdir
+  - help
+  - touch
+  - mv
+  - cat
+  - type
+  - dir
+path:
+  - ~/testpath
+path_executable: []

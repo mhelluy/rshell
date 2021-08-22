@@ -1,0 +1,19 @@
+invalid_character: |
+  For security reasons, characters ; | & && > >> < << are not allowed in terminal.
+  To execute a command in a specific directory, use 'execute in <directory> <command>'.
+  To search with grep, use another syntax of the command.
+forbidden: You do not have the permission to do this
+dir_forbidden: You cannot access this directory.
+file_to_edit: file to edit
+error: Error
+unknown_path: unknown path
+expire_access: Your administrator access will expire %e %b. %Y on %H:%M.
+expired_access: Your administrator access has expired %e %b. %Y on %H:%M.
+access_denied: Access denied
+usage: Usage
+available_commands: Available commands
+dir: directory
+error_edit_exec: You cannot edit files you are allowed to execute.
+no_description: No description available.
+file: file
+command: command
