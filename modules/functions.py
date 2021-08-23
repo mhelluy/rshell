@@ -20,8 +20,6 @@ def dataload(path):
         return yaml.safe_load(open(path+".yml","r").read())
     elif os.path.isfile(path+".json"):
         return jsload(open(path+".json","r").read())
-    else:
-        print(path)
 
 def datadump(path,data):
     ext = path.split(".")[-1]
