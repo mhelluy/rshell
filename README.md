@@ -11,7 +11,7 @@ Then, copy the content of the public key generated in the `.pub` file. **Don't p
 Clone the repository on your **remote server** and run the `install_key.py` script:
 ```bash
 git clone https://github.com/mhelluy/rshell.git
-python3 rshell/install_key.py
+python3 rshell/install_key.py "<paste your public key here (with quotes)>"
 ```
 *Note: if an exception `ModuleNotFoundError` is raised, run `python3 -m pip install <module name>`.*
 
