@@ -18,3 +18,17 @@ You will be asked for which permission file you want to apply and which user con
 You need to add a config entry on your local computer to bind your key to the host you want to connect in [~/.ssh/config](https://www.cloudsavvyit.com/4274/how-to-manage-an-ssh-config-file-in-windows-linux). Don't forget to set `IdentitiesOnly` to `yes` if you have several keys set for the same host.
 
 Then, simply connect with the ssh command, and the shell should open !
+
+## Configuration
+Rshell supports YML/YAML and JSON data format for configuration. To switch to another data format you just need to change the file extension (obviously, the content has to be in the corresponding format to be correctly decoded).
+
+### config.yaml
+default file content:
+```yaml
+paths:
+  # $$ is the directory where rshell.py is
+  userpath: $$/users
+  cmdhistory: $$/cmdhistory.yaml
+lang: "en-US" #langs are in the langs folder. currently only fr-FR and en-US are available
+timeout_delay: 1 hour #disabled to disable the delay.
+```
