@@ -66,4 +66,11 @@ path_executable: []
 Commands are either existing UNIX commands, or new commands that can be added in the `commands.py` file. The commands in `commands.py` overwrite the UNIX commands.  
 The path_executable entry must contains all the paths of the scripts that you want the user to be able to execute. The executable files cannot be edited, they can only be read, and executed using `execute <file>`.
 
-**WARNING :** by default, the UNIX commands are not configured to consider the paths specified in permission file. You'll need to overwrite them in `commands.py`. (See `base_commands.py` to see an example). The most time, a method executing `os.system("<command> +" ".join(args))`, decorated with `@autoCheckPath` will work.
+**WARNING :** by default, the UNIX commands are not configured to consider the paths specified in permission file. You'll need to overwrite them in `commands.py`. (See `base_commands.py` for an example). The most time, a method executing...
+```python
+os.system("<command> +" ".join(args))
+```
+...decorated with `@autoCheckPath` will work.
+
+## Users files
+Users files currently only contain the ssh-access expiration date. The `consoleAccess` entry must be an integer that represents the time in UNIX format (number of seconds since 1970.01.01). 
