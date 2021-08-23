@@ -1,13 +1,9 @@
 commands:
   - date
   - ls
-  - mcstart
-  - mcconsole
-  - mcsend
   - exit
   - scp
   - rsync
-  - mclogs
   - expire
   - cd
   - execute
