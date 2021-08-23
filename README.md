@@ -6,7 +6,7 @@ Rshell is a python shell that ains at being used with SSH to give users a strict
 
 ## Quick start
 First, create a SSH key on **your computer** which will connect to the server through SSH. You can use [ssh-keygen](https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/generate-ssh-key-pair.html) for this.  
-Then, copy the content of the public key generated in the `.pub` file. **Don't put it on the server at this moment**
+Then, copy the content of the public key generated in the `.pub` file. **Don't put it on the server at this point**
 
 Clone the repository on your **remote server** and run the `install_key.py` script:
 ```bash
