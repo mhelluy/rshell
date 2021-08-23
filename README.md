@@ -30,5 +30,40 @@ paths:
   userpath: $$/users
   cmdhistory: $$/cmdhistory.yaml
 lang: "en-US" #langs are in the langs folder. currently only fr-FR and en-US are available
-timeout_delay: 1 hour #disabled to disable the delay.
+timeout_delay: 1 hour #'disabled' to disable the delay.
 ```
+
+### Permissions files
+You can create several permissions files that give access to commands and paths.  
+The permission file which is loaded is specified when you add the ssh-key with the `install_key.py` script.
+Content of defaut permission file :
+```yaml
+commands:
+  - date
+  - ls
+  - exit
+  - scp
+  - rsync
+  - expire
+  - cd
+  - execute
+  - nano
+  - edit
+  - cp
+  - mkdir
+  - rm
+  - rmdir
+  - help
+  - touch
+  - mv
+  - cat
+  - type
+  - dir
+path:
+  - ~/testpath
+path_executable: []
+```
+Commands are either existing UNIX commands, or new commands that can be added in the `commands.py` file. The commands in `commands.py` overwrite the UNIX commands.  
+The path_executable entry must contains all the paths of the scripts that you want the user to be able to execute. The executable files cannot be edited, they can only be read, and executed using `execute <file>`.
+
+**WARNING :** by default, the UNIX commands are not configured to consider the paths specified in permission file. You'll need to overwrite them in `commands.py`. (See `base_commands.py` to see an example). The most time, a method executing `os.system("<command> +" ".join(args))`, decorated with `@autoCheckPath` will work.
